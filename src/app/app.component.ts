@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+  data = "asna"
+
+  
+func()
+{
+  return "1st function"
+}
+
 }

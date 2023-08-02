@@ -1,0 +1,17 @@
+<div class="screen">
+
+    <div style="display: flex;  justify-content: space-around;">
+        <div class="card">
+            <label>Name</label>
+            <input type="text" #namee placeholder="enter name" (keyup)="getData(namee.value)" class="input" />
+            <!-- <br /> <br />  -->
+            <label>Age</label>
+            <input type="number" #agee placeholder="enter age" (keyup)="getAge(agee.value)" class="input" />
+            <!-- <br /> <br />  -->
+            <button (click)="counter(agee.name)" class="button">Increment</button>
+            <!-- <br /> <br /> -->
+            <h4>Hello {{name}} your are {{age}} year old</h4>
+
+        </div>
+    </div>
+</div>
