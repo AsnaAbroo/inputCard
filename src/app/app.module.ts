@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PracticeComponent } from './practice/practice.component';
 import { CardComponent } from './card/card.component';
+import { HblcalculatorComponent } from './hblcalculator/hblcalculator.component';
 
 
 @NgModule({
@@ -11,6 +12,7 @@ import { CardComponent } from './card/card.component';
     AppComponent,
     PracticeComponent,
     CardComponent,
+    HblcalculatorComponent,
     
   ],
   imports: [

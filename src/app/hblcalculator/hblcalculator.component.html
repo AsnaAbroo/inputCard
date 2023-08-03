@@ -1,0 +1,21 @@
+<p>hblcalculator works!</p>
+<div class="screen">
+
+    <div style="display: flex;  justify-content: space-around;">
+        <div class="card">
+            <label>VEHICLE PRICE</label>
+            <input type="number" #price placeholder="enter price" (keyup)="getPrice(price.value)" class="input" />
+            <label>TO REPAY IN YEAR</label>
+            <input type="number" #repay placeholder="enter repay" (keyup)="getRepay(repay.value)" class="input" />
+            <label>DEPOSIT</label>
+            <input type="number" #d placeholder="enter deposit" (keyup)="getDep(d.value)" class="input" />
+
+            <button (click)="calculator()" class="button">CALCULATE</button>
+
+           
+            <h4>FINANCED AMOUNT {{FM}}</h4>
+            <h4>SECURITY DEPOSIT {{securitydep}}</h4>
+            <h4>MONTHLY INSTALLMENTS {{monthlyincom}}</h4>
+        </div>
+    </div>
+</div>

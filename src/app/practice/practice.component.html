@@ -30,8 +30,7 @@
 <h1 (mouseleave)="event('leave')">mouseLeave</h1>
  <h1 (mouseover)="color()">mouseOver</h1> -->
 <!-- <input type="text"
-#id
-/>
+#id/>
 <p> diaplay name when button will click :{{variable}} </p>
 <button (click)="getName2(id.value)" >click</button>
 
@@ -43,11 +42,44 @@
 component css .... only component
 internal css --> 
 
-<!-- interpolation only consider string number 
-property binding use to change  property or attribute or consider true false boolean 
+<!-- interpolation only consider string ,number 
+property binding use to change  property or attribute or consider true false boolean also
 
 [disabled]= bool-->
 
+<!-- 
+
+IF CONDITION
 
 <h1  *ngIf= "color==='red'"> i am red</h1>
-<h1  *ngIf= "color==='blue'"> i am blue</h1>
+<h1  *ngIf= "color==='blue'"> i am blue</h1> -->
+
+
+ <!-- SWITCH CONDITION 
+ <h1>{{title}}</h1> 
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'">RED</h1> 
+  // 'red' use bcz statement consider it a string 
+    <h1 *ngSwitchCase="'green'">i am RED color</h1> 
+    <h1 *ngSwitchCase="'blue'">i am BLUE color</h1> 
+    <h1 *ngSwitchCase="'yellow'">i am YELLOW color</h1> 
+    <h1 *ngSwitchCase="'gray'">i am GRAY color</h1> 
+    <h1 *ngSwitchDefault>invalid color</h1> 
+
+</div> -->
+ 
+ <h1 >
+  
+    list of names
+    <ul *ngFor="let item of namearray">
+      {{item}}
+    </ul>
+ </h1>
+
+ <h1>details of students</h1>
+ <ul *ngFor="let item of detailobject">
+  <li>{{item.name}}</li>
+  <li>{{item.class}}</li>
+  <li>{{item.batch}}</li>
+
+ </ul>

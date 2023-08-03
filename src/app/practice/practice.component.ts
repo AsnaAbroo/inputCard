@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class PracticeComponent {
 
-  color='blue';
+ // color='blue';
 //   getName()
 //   {
 //     return "function call"
@@ -52,6 +52,20 @@ export class PracticeComponent {
  
 // }
 
+// SWITCH CONDITION
+
+// title="switch";
+// color="yellow";
+
+namearray=['asna','hina','smr']
+detailobject=[
+{name:'asna', class:1, batch:2020 , innerarray:[1,2,3,4]},
+{name:'hina', class:2, batch:2021},
+{name:'smr', class:3, batch:2020},
+{name:'malai', class:4, batch:2026}
+
+
+];
 
 
 }
